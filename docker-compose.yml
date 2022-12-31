@@ -1,0 +1,7 @@
+version: '3'
+services:
+  gestsup:
+    container_name: gestsup
+    image: abulenger/gestsup
+    ports:
+      - 3025:80
