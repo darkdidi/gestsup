@@ -13,10 +13,10 @@ services:
     container_name: gestsup-db
     image: mariadb:10.3
     environment:
-      - MYSQL_ROOT_PASSWORD=D@rBre00
+      - MYSQL_ROOT_PASSWORD=P@ssword
       - MYSQL_DATABASE=bsup
       - MYSQL_USER=gestsup
-      - MYSQL_PASSWORD=D@rBre00
+      - MYSQL_PASSWORD=P@ssword
     restart: unless-stopped
     volumes:
       - ./mysql:/var/lib/mysql:rw
