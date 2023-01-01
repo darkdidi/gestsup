@@ -2,6 +2,21 @@ version: '3'
 services:
   gestsup:
     container_name: gestsup
-    image: darkdidi/gestsup
+    build: .
     ports:
       - 3025:80
+    depends_on:
+      - mariadb
+    volumes:
+      - ./gestsup:/var/www/html:rw
+  mariadb:
+    container_name: gestsup-db
+    image: mariadb:10.3
+    environment:
+      - MYSQL_ROOT_PASSWORD=D@rBre00
+      - MYSQL_DATABASE=bsup
+      - MYSQL_USER=gestsup
+      - MYSQL_PASSWORD=D@rBre00
+    restart: unless-stopped
+    volumes:
+      - ./mysql:/var/lib/mysql:rw
