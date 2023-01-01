@@ -1,4 +1,4 @@
-# gestsup
+# GestSup - Docker
 Container non officiel pour GestSup
 
 Installe avec docker :
