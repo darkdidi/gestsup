@@ -6,3 +6,5 @@ Installe avec docker :
 * MariaDB V 10.3
 
 Basé sur une image Debian 11
+
+Mot de passe BDD par défaut : P@ssword, modifiez sa valeur dans le fichier "docker-compose.yml"
